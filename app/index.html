@@ -1,0 +1,78 @@
+<html>
+  <head>
+  <title>Thermostat App</title>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://api.zerynth.com/zadm/latest/z.js"></script>
+  <script src="MyScript.js"></script>
+  </head>
+  <body>
+    <center>
+    <table>
+      <tr>
+        <td colspan="2">
+          <div   class="container">
+            <div class="de">
+              <div class="den">
+                <div class="dene">
+                  <div class="denem">
+                    <div id="temp" class="deneme">
+                      23<span id="erature">.9</span><strong>&deg;</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+        </td>
+      </tr>
+    </table>  
+      <div class="slider">
+        <input type="range" min="16" max="32" onchange="rangevalue.value=value; slide_callback();"/>
+        <output id="rangevalue">24</output>
+      </div>
+    <table>
+      <tr>
+        <td>Heating:</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;<input id="heat" type="checkbox"/></td>
+      </tr>
+      <tr>
+        <td><center>Light:</center></td>
+        <td> &nbsp;&nbsp;&nbsp;&nbsp;<input id="light" type="checkbox" /></td>
+      </tr>     
+      <tr>
+        <td>Water:</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;<input id="water" type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>State:</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="led"/></td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <tr>
+        <td id="desired">Shower Time:</td>
+        <td><input type="text" id="ore" size="3" placeholder="Hour"></td>
+        <td>:</td>
+        <td><input type="text" id="min" size="3" placeholder="Minutes"></td>
+      </tr>
+<tr></tr>
+      <tr>
+        <td><button id="button">GO!</button></td>
+      </tr>
+      <tr>
+        <td><p id="ris"></p></td>
+      </tr>
+    </table>
+    </center>
+    <script>
+         // After loading the page, call the
+         // initialize() function
+         $(function () {
+             initialize();
+         });
+       </script>
+  </body>
+</html>
