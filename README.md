@@ -1,5 +1,5 @@
 # Smart Bathroom
-###Internet of Things project: Smart Bathroom by Maria Laura Bisogno, Luca Coppola, Vincenzo Longobardi
+### Internet of Things project: Smart Bathroom by Maria Laura Bisogno, Luca Coppola, Vincenzo Longobardi
 
 Our idea is to create a model of a bathroom including a shower, a heating system and a lamp to simulate a real smart bathroom that can be simply controlled with the users’ smartphone.
 We realized an application which shows the current temperature of the room, allows to switch on/off every component of the bathroom and to set the shower time and desired temperature.
