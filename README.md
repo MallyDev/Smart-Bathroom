@@ -1,12 +1,16 @@
 # Smart Bathroom
 ### Internet of Things project: Smart Bathroom by Maria Laura Bisogno, Luca Coppola, Vincenzo Longobardi
 
-Our idea is to create a model of a bathroom including a shower, a heating system and a lamp to simulate a real smart bathroom that can be simply controlled with the users’ smartphone.
-We realized an application which shows the current temperature of the room, allows to switch on/off every component of the bathroom and to set the shower time and desired temperature.
+The idea was to create a model of a bathroom including a shower, a heating system and a lamp to simulate a real smart bathroom that can be simply controlled by mobile app.
 
-We used the NUCLEO-F401RE - STM32 microcontroller, the X-NUCLEO-IDW01M1 Wi-Fi module and X-NUCLEO-IKS01A2 environmental sensor expansion board.
+With the application is possible to: 
+- check the temperature of the room
+- switch on/off every component of the bathroom
+- set the 'shower time' and the desired temperature: 'shower time' means that if the user plan to do a shower at 8pm, it will set the shower time at 8 o'clock. If the interval between the set time and the shower time at the moment of the setting is less than 30 minutes, and the temperature of the room is lower than the desired one, the heating system will be immediately swiched on until the room will be warm enough; if the interval is more than 30 minutes, it will switch on the heating system 30 minutes before the shower time.
+
+We used the NUCLEO-F401RE STM32 microcontroller, the X-NUCLEO-IDW01M1 Wi-Fi module and X-NUCLEO-IKS01A2 environmental sensor expansion board.
 To simulate the shower, we used a submersible pump that works with 220V.
-Since the nucleo f401re can output a maximum of 5V we used an external power supply (12V) to excite the 12V relay and a transistor connected in this way:
+Since the nucleo f401re can output a maximum of 5V we used an external power supply (12V) to trigger the 12V relay and a transistor connected in this way:
 
 ![alt text](https://github.com/MallyDev/Smart-Bathroom/blob/master/Circuit.jpg)
 
